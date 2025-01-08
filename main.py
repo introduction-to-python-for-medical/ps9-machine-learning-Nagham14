@@ -7,9 +7,9 @@ parkinsons_df = parkinsons_df.dropna()
 parkinsons_df.head()
 
 
-input_features = ['NHR', 'RPDE ']
+input_features = ['NHR', 'RPDE']
 output_feature = ['status']
-X = parkinsons_df[['NHR', 'RPDE ']]
+X = parkinsons_df[['NHR', 'RPDE']]
 y = parkinsons_df['status']
 
 from sklearn.preprocessing import MinMaxScaler
