@@ -28,7 +28,7 @@ X_train, X_val, y_train, y_val = train_test_split(X_scaled, y, test_size=0.2, ra
 
 from sklearn.svm import SVC
 
-svc = SVC(kernel='linear', C=3, random_state = 42) 
+svc = SVC(kernel='linear', C=2, random_state = 42) 
 svc.fit(X_train, y_train)
 y_pred = svc.predict(X_val)
 
