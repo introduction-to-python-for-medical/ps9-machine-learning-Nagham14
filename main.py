@@ -2,14 +2,14 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-parkinsons_df = pd.read_csv('parkinsons.csv')
+parkinsons_df = pd.read_csv('/content/parkinsons.csv')
 parkinsons_df = parkinsons_df.dropna()
 parkinsons_df.head()
 
 
-input_features = ['NHR', 'RPDE']
+input_features = ['DFA', 'PPE']
 output_feature = ['status']
-X = parkinsons_df[['NHR', 'RPDE']]
+X = parkinsons_df[['DFA', 'PPE']]
 y = parkinsons_df['status']
 
 from sklearn.preprocessing import MinMaxScaler
